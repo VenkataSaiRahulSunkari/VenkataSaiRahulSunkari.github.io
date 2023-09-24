@@ -1,5 +1,46 @@
-h1 {
-    color: black;
+.heading-text {
+    color: white;
     text-align: center;
+    /* font-family: "Raleway", sans-serif; */
+    font-family: 'Montserrat', sans-serif;
+    font-size: 32px!important;
+    position: absolute; /* Position the text absolutely within the container */
+    top: 50%; /* Move the text 50% down from the top */
+    left: 50%; /* Move the text 50% to the right */
+    transform: translate(-50%, -50%); /* Center the text both horizontally and vertically */
+    padding: 10px; /* Add some padding for readability */
 }
-  
+
+.heading {
+    background-image: url('images/pexels.jpg');
+    min-height: 100%;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+}
+
+.socialLinks img {
+    width: 20px;
+    height: 20px;
+    margin: 5px;
+}
+
+.socialLinks {
+    position: fixed;
+    top: 50%;
+    left: 0;
+    background-color: #2C3333; /* Background color for the side navigation bar */
+    padding: 0px;
+    width: 30px; /* Adjust the width as needed */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.socialLinks a {
+    text-decoration: none;
+    color: #fff; /* Color for the icon links */
+    margin: 10px 0; /* Add spacing between the icons */
+}
