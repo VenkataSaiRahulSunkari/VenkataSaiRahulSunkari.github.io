@@ -1,9 +1,49 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Style for the navbar */
+.navbar {
+    background-color: #333; /* Background color for the navbar */
+    text-align: center; /* Center-align the links within the navbar */
+    padding: 5px 0; /* Add padding for spacing */
+    position: fixed;
+    width: 100%;
+}
+
+/* Style for the list of links */
+.nav-list {
+    list-style-type: none; /* Remove bullet points from the list */
+    padding: 0;
+}
+
+/* Style for the links */
+.nav-list li {
+    display: inline; /* Display list items horizontally */
+    margin-right: 20px; /* Add spacing between links */
+}
+
+/* Style for the link text */
+.nav-list li a {
+    text-decoration: none; /* Remove underlines from links */
+    color: #fff; /* Link color */
+    /* font-weight: 400; */
+    font-weight: bold; /* Make the text bold */
+}
+
+/* Hover effect for the links (optional) */
+.nav-list li a:hover {
+    color: #ff9900; /* Change the color on hover */
+}
+
 .heading-text {
     color: white;
     text-align: center;
-    /* font-family: "Raleway", sans-serif; */
     font-family: 'Montserrat', sans-serif;
     font-size: 32px!important;
+    font-weight: 100;
     position: absolute; /* Position the text absolutely within the container */
     top: 50%; /* Move the text 50% down from the top */
     left: 50%; /* Move the text 50% to the right */
@@ -19,6 +59,7 @@
     width: 100%;
     height: 100vh;
     background-repeat: no-repeat;
+    font-weight: 100;
 }
 
 .socialLinks img {
