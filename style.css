@@ -1,0 +1,515 @@
+/* Common Styles */
+/* Common: tag */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0; /* Required to occupy the edges of the browser */
+    padding: 0; /* Required to occupy the edges of the browser */
+}
+
+h1 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 40px;
+    color: #EEEEEE;
+    font-weight: 100;
+}
+
+h2 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 32px;
+    font-weight: 100;
+    color: #272829;
+}
+
+/* Common: class */
+.text-center {
+    text-align: center;
+}
+
+.font-raleway{
+    font-family: 'Raleway', sans-serif;
+}
+
+.font-roboto {
+    font-family: 'Roboto Serif', serif;
+}
+
+.container {
+    width: 100vw;
+    height: auto;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+}
+
+section {
+    position: relative;
+}
+
+.section-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.section-bottom {
+    position: absolute;
+    top: 98%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* [END] Common */
+
+
+/* Section: navbar */
+.navbar {
+    background-color: #333333; /* Background color for the navbar */
+    text-align: center; /* Center-align the links within the navbar */
+    justify-content: center;
+    padding: 5px 0; /* Add padding for spacing */
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+/* Style for the list of links */
+.nav-list {
+    list-style-type: none; /* Remove bullet points from the list */
+    padding: 0;
+}
+
+/* Style for the links */
+.nav-list li {
+    display: inline; /* Display list items horizontally */
+    margin-right: 20px; /* Add spacing between links */
+}
+
+/* Style for the link text */
+.nav-list li a {
+    text-decoration: none; /* Remove underlines from links */
+    color: #EEEEEE; /* Link color */
+    font-weight: 400;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold; /* Make the text bold */
+}
+
+/* Hover effect for the links (optional) */
+.nav-list li a:hover {
+    color: #FF5722; /* Change the color on hover */
+}
+/* [END] Section: navbar */
+
+
+/* Section: Intro */
+.intro {
+    background-image: url('images/pexels.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: black;
+    width: 100%;
+    height: 100vh;
+}
+
+.intro-content hr {
+    width: 60%;
+    color: #EEEEEE;
+}
+
+.intro-content p {
+    font-size: 18px;
+    color: #EEEEEE;
+    font-family: 'Roboto Serif', serif;
+}
+
+.intro-content span {
+    font-size: 16px;
+    color: #EEEEEE;
+    font-family: 'Roboto Serif', serif;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.resume {
+    margin-top: 100px;
+}
+
+.resume button {
+    border-radius: 20px;
+    padding: 10px 20px;
+}
+
+.resume-button {
+    border: none;
+    color: #EEEEEE;
+    font-size: 16px;
+    background-color: black;
+    text-align: center;
+    text-decoration: none;
+    display: table-row; 
+    /* Aligns the button in the center of the division alongwith the context of the button in its cneter (others didn't work)*/
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border: 2px solid #ddd;
+    justify-content: center;
+    align-items: center;
+}
+
+.resume-button img {
+    margin-right: 5px;
+    filter: invert(1);
+}
+
+.resume button:hover {
+    cursor: pointer !important;
+    background-color: #333;
+    color: #ff9900;
+}
+
+.scroll-down img {
+    filter: invert(1);
+}
+/* [END] Section: Intro */
+
+
+/* Section: About Me */
+#about {
+    width: 100vw;
+    height: auto;
+    align-items: center;
+    background-color: #e5e5e5;
+    padding-top: 5vh; /*Mandatory since the h2 tag is occupying space beyond the section above it.*/
+    padding-bottom: 10vh;
+}
+
+.about-content p {
+    font-size: 18px;
+    color: #272829;
+    padding-left: 20vw;
+    padding-right: 20vw;
+}
+
+.about-content a {
+    color: #272829;
+    text-decoration: none;
+}
+
+.about-content a:hover {
+    color: #FF5722;
+    font-weight: bold;
+}
+
+.about-content img {
+    width: auto;
+    height: 20vh;
+    border-radius: 15%;
+    padding-bottom: 2vh;
+}
+/* [END] Section: About Me */
+
+
+/* Section: Education */
+#education {
+    width: 100vw;
+    background-color: #b2b2b2;
+    gap: 16px;
+    justify-items: center;
+    justify-content: center;
+    color: #272829;
+}
+
+
+.degrees {
+    padding-left: 20vw;
+    padding-right: 20vw;
+}
+
+.njit {
+    margin-bottom: 50px;
+}
+/* [END] Section: Education */
+
+
+/* Section: Work Experience */
+#work-experience {
+    width: 100vw;
+    background-color: #7f7f7f;
+    gap: 16px;
+    justify-items: center;
+    justify-content: center;
+}
+
+.companies {
+    padding-left: 20vw;
+    padding-right: 20vw;
+}
+
+.companies a {
+    text-decoration: none;
+    color: #272829;
+}
+
+.companies a:hover {
+    color: #FF5722;
+    font-weight: bold;
+}
+
+.companies p {
+    text-align: left;
+}
+
+.company-container {
+    padding: 5px;
+}
+.company-container:hover {
+    background-color: #4c4c4c;
+    transition-duration: 0.6s;
+    border-radius: 10px;
+    color: #FF5722;
+    font-weight: bold;
+    transform: scale(1.03);
+}
+/* [END] Section: Work Experience */
+
+
+/* Section: Skills */
+.skills {
+    background-color: #b2b2b2;
+}
+
+.skills p {
+    font-weight: bolder;
+}
+
+.skill-container {
+    width: 100%;
+    background-color: #ddd;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+
+.rating {
+    background-color: #E55604;
+    border-radius: 20px;
+    text-indent: 10px;
+    text-align: left;
+    font-size: 12px;
+}
+  
+.novice {
+    width: 20%
+}
+  
+.beginner {
+    width: 40%;
+}
+  
+.intermediate {
+    width: 60%;
+}
+  
+.advanced {
+    width: 80%
+}
+  
+.expert {
+    width: 100%
+}
+
+.skills-matrix {
+    display: block;
+    padding-left: 20vw;
+    padding-right: 20vw;
+}
+
+.skill-matrix table {
+    align-items: start;
+    width: 60vw;
+}
+
+td {
+    width: 15%;
+    padding: 10px;
+    vertical-align: top; /* Align to the top vertically */
+}
+/* [END] Section: Skills */
+
+
+/* Section: Certificates */
+.certificates {
+    background-color: #D8D9DA;
+}
+.certificate-layout {
+    padding-left: 10%;
+    padding-right: 10%;
+    display: inline-block;
+}
+
+.certificate-layout img {
+    width: 80%;
+    height: auto;
+    padding: 10%;
+    transition-duration: 0.4s;
+}
+
+.certificate-layout img:hover {
+    transform: scale(1.05); /* Slightly scale up the slide on hover */
+}
+
+.certificate-layout a {
+    font-family: 'Roboto Serif', serif;
+    text-decoration: none;
+    color: #272829;
+}
+
+.certificate-layout a:hover {
+    font-weight: bold;
+    color: #FF5722;
+}
+
+.certificate-layout td {
+    vertical-align: middle;
+    text-align: center;
+}
+/* [END] Section: Certificates */
+
+
+/* Section: Contact */
+#contact {
+    background-color: #191919;
+    color: #EEEEEE;
+}
+
+#contact h2 {
+    color: #EEEEEE;
+}
+
+.email img {
+    width: 75px;
+    height: auto;
+    filter: saturate(0);
+}
+.email img:hover {
+    transform: scale(1.20);
+    transition-duration: 0.4s;
+    filter: saturate(1);
+    filter: drop-shadow(1);
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 25px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+}
+
+.fa:hover {
+    transform: scale(1.05);
+    transition-duration: 0.4s;
+    opacity: 0.9;
+}
+
+.fa-linkedin {
+    background: #007bb5;
+    color: #EEEEEE;
+}  
+
+.fa-github {
+    background: #777777;
+    color: #EEEEEE;
+}
+
+.fa-instagram {
+    background: #125688;
+    color: #EEEEEE;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: #EEEEEE;
+}
+
+.fa-reddit {
+    background: #ff5700;
+    color: #EEEEEE;
+}
+
+#contact {
+    padding-bottom: 3vh;
+}
+/* [END] Section: Contact */
+
+
+/* Footer */
+footer {
+    background-color: #191919;
+    margin: 0;
+    padding: 0;
+}
+
+.footer p {
+    color: #EEEEEE;
+}
+/* [END] Footer */
+
+
+/* Section: Company */
+.company {
+    background-color: #e5e5e5;
+}
+
+.project {
+    padding-bottom: 25px;
+    border-bottom: #b2b2b2 solid;
+}
+
+.project span {
+    font-size: 12px;
+}
+
+.cname {
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+}
+
+.cname h3 {
+    padding-left: 10vw;
+    /* padding-bottom: 5vw; */
+    display: inline-block;
+    align-items: center;
+    color: #272829;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+.cname img {
+    /* display: inline-block; */
+    float: right;
+    vertical-align: middle;
+    padding-right: 20vw;
+    width: 250px;
+    height: auto;
+}
+
+.cname h3:hover {
+    transform: scale(1.05);
+    transition-duration: 0.4s;
+    color: #FF5722;
+}
+
+.cname img:hover {
+    transform: scale(1.05);
+    transition-duration: 0.4s;
+}
+
+.company ol {
+    padding-left: 12vw;
+    padding-right: 20vw;
+}
+/* [END] Section: Company */

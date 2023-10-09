@@ -1,0 +1,216 @@
+/* Reset default margin and padding for the body */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.text-center {
+  text-align: center;
+}
+
+#education {
+  display: flex;
+  gap: 16px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.certificate-layout {
+  padding-left: 10%;
+  padding-right: 10%;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+}
+
+.certificate-layout img {
+  width: 80%;
+  height: auto;
+  padding: 10%;
+}
+
+.skills {
+  display: grid;
+  box-sizing: border-box;
+  grid-template-rows: repeat(auto-fit, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.skill-container {
+  width: 100%;
+  background-color: #ddd;
+  border-radius: 20px;
+  margin-bottom: 10px;
+}
+
+.skill {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: black;
+  text-align: left;
+}
+
+.rating {
+  background-color: tomato;
+  border-radius: 20px;
+  text-align: left;
+  padding-left: 5px;
+}
+
+.novice {
+  width: 20%
+}
+
+.beginner {
+  width: 40%;
+}
+
+.intermediate {
+  width: 60%;
+}
+
+.advanced {
+  width: 80%
+}
+
+.expert {
+  width: 100%
+}
+
+.progress-bar {
+  opacity: 0.0;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: 
+    radial-gradient(closest-side, white 79%, transparent 80% 100%),
+    conic-gradient(hotpink 75%, pink 0);    
+}
+
+.progress-bar:hover {
+  opacity: 1.0;
+}
+
+
+
+/* Style for the checkbox */
+input[type="checkbox"] {
+  display: none; /* Hide the checkbox */
+}
+
+/* Style for the toggle label */
+.toggle-label {
+  display: block;
+  background-color: #3498db;
+  color: #fff;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+/* Style for the content */
+.content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out;
+}
+
+/* Apply the content style when the checkbox is checked */
+input[type="checkbox"]:checked + .content {
+  max-height: 200px; /* Adjust the maximum height as needed */
+}
+
+
+.layout {
+  width: 100%;
+  max-height: fit-content;
+  justify-content: center;
+  align-self: center;
+  
+
+  display: grid;
+  grid:
+    "sidebar body" 1fr
+    / auto 1fr;
+  gap: 8px;
+}
+
+.sidebar { 
+  grid-area: sidebar; 
+  background-color: blue;
+}
+.body { 
+  grid-area: body; 
+  background-color: red;
+  }
+
+.grayscale { 
+  filter: grayscale(100%);
+}
+
+#linkedin:hover {
+  filter: grayscale(0%);
+}
+
+.gfg-container {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr 0.2fr;
+  grid-template-rows: 100vh;
+  grid-gap: 10px;
+}
+
+
+.gfg-container div {
+  border: 3px black;
+  border-radius: 7px;
+  background-color: yellowgreen;
+  padding: 1em;
+  text-align: center;
+  color: darkgreen;
+}
+
+h1 {
+  color: green;
+  text-align: center;
+}

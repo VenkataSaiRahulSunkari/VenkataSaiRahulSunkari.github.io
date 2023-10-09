@@ -4,58 +4,306 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Resume</title>
-    <link rel="icon" type="image/png" href="./images/favicon.png">
-    <link rel="stylesheet" href="styles.css">
-    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway"> -->
+
+    <link rel="icon" type="image/png" href="./images/favicon.png"> <!-- Icon for the page -->
+    <link rel="stylesheet" href="style.css"> <!-- Link css style -->
+
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <!-- <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&display=swap" rel="stylesheet"> -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&family=Poppins:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&family=Roboto+Serif:wght@200&display=swap" rel="stylesheet">
+    <!-- Google Fonts -->
+    <!-- Social Media Icons [Reference: https://www.w3schools.com/howto/howto_css_social_media_buttons.asp] -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Social Media Icons -->
 </head>
-
 <body>
-    <div class="navbar">
+    <!-- Section: Navigation -->
+    <section class="navbar">
         <ul class="nav-list">
-            <li><a href="#heading">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Certificates</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#intro">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#work-experience">Work Experience</a></li>
+            <li><a href="#certificates">Certificates</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
-    </div>
+    </section>
+    <!-- Section: Navigation -->
 
-    <div class="sidenav">
-        <a href="https://www.linkedin.com/in/venkata-sai-rahul-sunkari-a239a8128/" target="_blank">
-            <img src="images/logo-linkedin.png" alt="Linkedin">
-        </a>
-        <a href="https://github.com/VenkataSaiRahulSunkari" target="_blank">
-            <img src="images/logo-github.png" alt="GitHub" />
-        </a>
-    </div>
-
-    <div class="heading">
-        <div class="heading-text">
-            <h1>Venkata Sai Rahul Sunkari</h1>
-            <!-- <hr style="margin:auto;width:60%;border-color:#9e9e9e!important"> -->
-
-            <div class="certificates">
-                <div class="certificate">
-                    <a href="https://www.credly.com/badges/25b74824-b146-460f-ae0a-4d978253785c/public_url" target="_blank"><img src="images/terraform-CHIP.png" alt="Terraform Certified Hashicorp Implementation Partner (CHIP)" width="125px" height="125px"></a>
-                </div>
-                <div class="certificate">
-                    <a href="https://www.credly.com/badges/77660f46-b306-43a9-a708-d5df16838fa5/public_url" target="_blank"><img src="images/terraform-002.png" alt="Terraform Certified Aassociate" width="125px" height="125px"></a>
-                </div>
-                <div class="certificate">
-                    <a href="https://www.credly.com/badges/b279e51b-04cb-4341-b0ad-bff8b96157e9/public_url" target="_blank"><img src="images/cka-certified-kubernetes-administrator.png" alt="CKA: Certified Kubernetes Administrator" width="125px" height="125px"></a>
-                </div>
-                <div class="certificate">
-                    <a href="https://www.credential.net/bf463454-ad01-48b6-a417-91df24a92673" target="_blank"><img src="images/google-cloud-certified-associate.png" alt="Google Cloud Associate Cloud Engineer" width="125px" height="125px"></a>
-                </div>
-                <div class="certificate">
-                    <a href="https://www.credly.com/badges/a9d46eff-aff7-473f-9b83-eb19a31d03a1/public_url" target="_blank"><img src="images/aws-certified-solutions-architect-associate.png" alt="AWS Certified Solutions Architect Associate" width="125px" height="125px"></a>
-                </div>
+    <!-- Section: Intro -->
+    <section id="intro" class="intro text-center">
+        <div class="intro-content section-center">
+            <h1>HI, I'M VENKATA SAI RAHUL SUNKARI</h1>
+            <hr>
+            <p>Welcome to my portfolio! As you navigate through my portfolio, you'll discover a collection of projects and experiences that showcase my dedication to excellence, innovation, and the holistic advancement of my technology landscape.</p><br>
+            <span>Graduate Student</span><span>∙</span>
+            <span>Site Reliability Engineer (SRE)</span><span>∙</span>
+            <span>Senior DevSecOps Engineer</span>
+            <div class="resume">
+                <form method="get" action="documents/resume.pdf">
+                    <button type="download" class="resume-button">Checkout My Resume</button>
+                </form>
             </div>
         </div>
-    </div>
+        <div class="scroll-down">
+            <a href="#about"><img src="images/scroll_down.png" alt="scroll down" class="section-bottom"></a>
+        </div>
+    </section>
+    <!-- Section: Intro -->
 
+
+    <!-- Section: About me -->
+    <section id="about" class="text-center container">
+        <div class="about-content">
+            <h2>ABOUT ME</h2>
+            <img src="images/profile-photo.jpg" alt="Profile Photo">
+            <p class="font-roboto">
+                With over six years of experience as a Site Reliability Engineer (SRE) and DevSecOps Engineer, I have had the privilege of collaborating with multiple clients across diverse industries. My passion lies in problem-solving, and I thrive in crafting robust solutions that enhance the reliability and security of systems. Specializing in cloud architecture design, I bring a wealth of expertise in creating scalable and efficient infrastructures. Automation is at the heart of my approach, as I believe in streamlining processes to optimize performance. My journey in the field of computer science has been characterized by a commitment to continuous learning and a drive to explore all major facets of this dynamic discipline. <br>
+                I am currently pursuing my Master's degree in Computer Science from <a href="https://www.njit.edu/" target="_blank">New Jersey Institute of Technology</a>.<br><br>
+                When I'm not on the computer, I enjoy doing photography, exploring new places, swimming and coffee.
+            </p>
+        </div>
+    </section>
+    <!-- Section: About me -->
+
+    
+    <!-- Section: Education -->
+    <section id="education" class="container">
+        <div class="title text-center">
+            <h2 class="font-raleway">EDUCATION</h2>
+        </div>
+        <div class="degrees font-roboto">
+            <div class="degree njit">
+                <h3 class="degree-title">Master's in Computer Science</h3>
+                <p>New Jersey Institute of Technology, New Jersey, USA | SEP 2023 - PRESENT</p>
+            </div>
+            <div class="degree">
+                <h3 class="degree-title">Bachelor of Technology (B.Tech) in Mechanical Engineering</h3>
+                <p>National Institute of Technology, Raipur, India | JUL 2013 - MAY 2017 | CGPA: 7.25/10</p>
+            </div>
+        </div>
+    </section>
+    <!-- Section: Education -->
+
+    
+    <!-- Section: Work Experience -->
+    <section id="work-experience" class="container">
+        <div class="title text-center">
+            <h2 class="font-raleway">WORK EXPERIENCE</h2>
+        </div>
+        <div class="companies font-roboto">
+            <a href="atyeti.html" target="_blank">
+                <div class="company-container">
+                    <h3>Atyeti IT Services Pvt Ltd</h3>
+                    <p>Sr. Software Developer | Aug 2021 - Aug-2023</p>
+                </div>
+            </a>
+            <a href="virtusa.html" target="_blank">
+                <div class="company-container">
+                    <h3>Virtusa Consulting Services Pvt Ltd</h3>
+                    <p>Consultant | Jul 2017 - Aug-2021</p>
+                </div>
+            </a>
+        </div>
+    </section>
+    <!-- Section: Work Experience -->
+
+
+    <!-- Section: Skills -->
+    <section id="skills" class="skills container">
+        <div class="font-raleway text-center">
+            <h2>SKILLS</h2>
+        </div>
+        <div class="skills-matrix font-roboto">
+            <table>
+                <tr>
+                    <td>
+                        <div class="text-center">
+                            <p>CLOUD</p>
+                            <div class="skill-container">
+                                <div class="advanced rating">AWS</div>
+                            </div>
+                            <div class="skill-container">
+                                <div class="intermediate rating">GCP</div>
+                            </div>
+                            <div class="skill-container">
+                                <div class="beginner rating">Azure</div>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="text-center">
+                            <p>LANGUAGES</p>
+                            <div class="skill-container">
+                                <div class="intermediate rating">Python</div>
+                            </div>
+                            <div class="skill-container">
+                                <div class="intermediate rating">Shell</div>
+                            </div>
+                            <div class="skill-container">
+                                <div class="intermediate rating">Powershell</div>
+                            </div>
+                            <div class="skill-container">
+                                <div class="beginner rating">Java</div>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="text-center">
+                            <p>INFRASTRUCTURE AS CODE</p>
+                            <div class="skill-container">
+                                <div class="expert rating">Terraform</div>
+                            </div>
+                            <div class="skill-container">
+                                <div class="advanced rating">Chef</div>
+                            </div>
+                            <div class="skill-container">
+                                <div class="beginner rating">Vault</div>
+                            </div>
+                            <div class="skill-container">
+                                <div class="beginner rating">Ansible</div>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="text-center">
+                            <p>MONITORING & LOGGING</p>
+                            <div class="skill-container">
+                                <div class="advanced rating">Datadog</div>
+                            </div>
+                            <div class="skill-container">
+                                <div class="advanced rating">Splunk</div>
+                            </div>
+                            <div class="skill-container">
+                                <div class="intermediate rating">Grafana</div>
+                            </div>
+                            <div class="skill-container">
+                                <div class="intermediate rating">Prometheus</div>
+                            </div>
+                            <div class="skill-container">
+                                <div class="beginner rating">New Relic</div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>   
+                <tr>
+                    <td>
+                        <div class="text-center">
+                            <p>SOURCE CODE MANAGER</p>
+                            <div class="skill-container">
+                                <div class="expert rating">GitHub</div>
+                            </div>
+                            <div class="skill-container">
+                                <div class="expert rating">SVN</div>
+                            </div>
+                            <div class="skill-container">
+                                <div class="beginner rating">BitBucket</div>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="text-center">
+                            <p>DEVOPS TOOLS</p>
+                            <div class="skill-container">
+                                <div class="expert rating">GitHub Actions</div>
+                            </div>
+                            <div class="skill-container">
+                                <div class="intermediate rating">Jenkins</div>
+                            </div>
+                            <div class="skill-container">
+                                <div class="advanced rating">Azure DevOps</div>
+                            </div>
+                            <div class="skill-container">
+                                <div class="advanced rating">TeamCity</div>
+                            </div>
+                            <div class="skill-container">
+                                <div class="advanced rating">GoCD</div>
+                            </div>
+                            <div class="skill-container">
+                                <div class="intermediate rating">Sonarqube</div>
+                            </div>
+                            <div class="skill-container">
+                                <div class="beginner rating">Veracode</div>
+                            </div>
+                            <div class="skill-container">
+                                <div class="intermediate rating">JFrog</div>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="text-center">
+                            <p>CONTAINER TECHNOLOGIES</p>
+                            <div class="skill-container">
+                                <div class="advanced rating">Kubernetes</div>
+                            </div>
+                            <div class="skill-container">
+                                <div class="advanced rating">Docker</div>
+                            </div>
+                            <div class="skill-container">
+                                <div class="beginner rating">Helm</div>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="text-center">
+                            <p>DATABASES</p>
+                            <div class="skill-container">
+                                <div class="beginner rating">MSSQL</div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>         
+            </table>
+        </div>
+    </section>
+    <!-- Section: Skills -->
+
+
+    <!-- Section: Certificates -->
+    <section id="certificates" class="certificates container">
+        <div class="text-center">
+            <h2>CERTIFICATES</h2>
+        </div>
+        <div class="certificate-layout">
+            <table>
+                <tr>
+                    <td><a href="https://www.credly.com/badges/25b74824-b146-460f-ae0a-4d978253785c/public_url" target="_blank"><img src="images/terraform-CHIP.png" alt="Terraform Certified Hashicorp Implementation Partner (CHIP)">Terraform Certified Hashicorp Implementation Partner (CHIP)</a></td>
+                    <td><a href="https://www.credly.com/badges/77660f46-b306-43a9-a708-d5df16838fa5/public_url" target="_blank"><img src="images/terraform-002.png" alt="Terraform Certified Associate">Terraform Certified Associate</a></td>
+                    <td><a href="https://www.credly.com/badges/b279e51b-04cb-4341-b0ad-bff8b96157e9/public_url" target="_blank"><img src="images/cka-certified-kubernetes-administrator.png" alt="CKA: Certified Kubernetes Administrator">CKA: Certified Kubernetes Administrator</a></td>
+                    <td><a href="https://www.credential.net/bf463454-ad01-48b6-a417-91df24a92673" target="_blank"><img src="images/google-cloud-certified-associate.png" alt="Google Cloud Associate Cloud Engineer">Google Cloud Associate Cloud Engineer</a></td>
+                    <td><a href="https://www.credly.com/badges/a9d46eff-aff7-473f-9b83-eb19a31d03a1/public_url" target="_blank"><img src="images/aws-certified-solutions-architect-associate.png" alt="AWS Certified Solutions Architect Associate">AWS Certified Solutions Architect Associate</a></td>
+                </tr>
+            </table>
+        </div>
+    </section>
+
+    
+    <!-- Section: Contact -->
+    <section id="contact" class="contact container">
+        <div class="text-center">
+            <h2>GET IN TOUCH!</h2>
+        </div>
+        <div class="email text-center">
+            <p class="font-roboto">If you like to collaborate for work or just hangout for a coffee, feel free to email!</p>
+            <a href="mailto:14324rahul@gmail.com" target="_blank">
+                <img src="images/email.png" alt="Email: 14324rahul">
+            </a>
+        </div>
+    </section>
+    <!-- Section: Contact -->
+
+    <!--Footer-->
+    <footer class="text-center font-raleway container footer">
+        
+        <div class="social-media text-center">
+            <a href="https://www.linkedin.com/in/venkata-sai-rahul-sunkari-a239a8128/" class="fa fa-linkedin" target="_blank"></a>
+            <a href="https://github.com/VenkataSaiRahulSunkari" class="fa fa-github" target="_blank"></a>
+            <a href="https://www.instagram.com/rahul_svs/" class="fa fa-instagram" target="_blank"></a>
+            <a href="https://www.facebook.com/rahulsvs14324/" class="fa fa-facebook" target="_blank"></a>
+            <a href="https://www.reddit.com/user/rahulsunkari14" class="fa fa-reddit" target="_blank"></a>
+        </div>
+        <p> &copy VENKATA SAI RAHUL SUNKARI 2023</p> <!-- Reference for copyright (&copy): https://www.compart.com/en/unicode/U+00A9 -->
+    </footer>
+    <!--Footer-->
 </body>
 </html>
